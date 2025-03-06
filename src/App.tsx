@@ -4,13 +4,13 @@ import viteLogo from "/vite.svg";
 
 export const App = () => {
   const [count, setCount] = useState(0);
-  const [pippo, setTitle] = useState("Frontend Rocks");
+  const [title, setTitle] = useState("Greninja");
 
   return (
     <div className="h-dvh flex flex-col items-center justify-center">
       <div className="bg-white p-8 rounded-md shadow-lg">
-        <h1 className="text-center font-bold text-3xl text-blue-400 mb-4">
-          {pippo}
+        <h1 className="text-center font-bold text-3xl text-blue-400 mb-4">1
+          {title}
         </h1>
 
         <div className="flex justify-center space-x-4 mb-2">
@@ -34,9 +34,9 @@ export const App = () => {
 
           <button
               className="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md cursor-pointer hover:bg-blue-600 transition-colors"
-              onClick={() => setTitle("Charizard")}
+              onClick={() => setTitle("Dragonite")}
           >
-            Cambia
+            Cambia Pokemon
           </button>
 
           <p className="text-center">
