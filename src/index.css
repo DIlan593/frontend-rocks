@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
 body {
-  background-image: url('/pubblic/Greninja-pattern.png');
+  background-image: url('/Greninja-pattern.png');
   background-repeat: repeat;
 }

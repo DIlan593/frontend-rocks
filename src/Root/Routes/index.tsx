@@ -13,7 +13,7 @@ const data = [
     {
         id:1,
         image:
-        "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork"
+        "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/001.png"
         name: "Bulbasaur"
         types: ["grass", "poison"],
     ),
