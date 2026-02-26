@@ -9,13 +9,21 @@ type Props = {
   types: string[];
 }
 function Card(props: Props) {
-  return <div>
-    {props.id}
-    {props.name}
-    <img src={props.image}/>
-    {props.types.map((type) => <span> {type}</span>)}
-  
+  return (
+    <div className="card">
+      <div className="image-container">
+        <div className="background-white"></div>
+        <div className="image-wrapper">
+          <img src={props.image} alt={props.name}/>
+        </div>
+      </div>
+      <div className="card-number">#{props.id.toString().padStart(3, '0')}</div>
+      <div className="card-name">{props.name}</div>
+      <div className="card-types">
+        {props.types.map((type) => <span className="type-badge" key={type}>{type}</span>)}
+      </div>
     </div>
+  );
 }
 
 export function Root() {
@@ -28,10 +36,10 @@ export function Root() {
         types={["Water"]}
       />
       <Card
-        id={0}
-        image="https://placeholdit.com/400/dddddd/999999"
-        name="Greninja"
-        types={["grass"]}
+        id={458}
+        image="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/458.png"
+        name="Mantyke"
+        types={["Water", "Flying"]}
       />
     </div>
   );
