@@ -8,7 +8,7 @@ export const Detail = () => {
 
 export const App = () => {
   const [count, setCount] = useState(0);
-  const [title, setTitle] = useState("Sono il nuovo titolo w22222222");
+  const [title, setTitle] = useState("Hola!!!!");
 
   useEffect(() => {
     if (count === 4) {
